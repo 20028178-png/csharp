@@ -74,7 +74,7 @@ namespace ConsoleApplication
                 Console.WriteLine();
                 Console.WriteLine("--------------------------------------------");
                 Console.WriteLine("------------------- BILL -------------------");
-                Console.WriteLine("Date & Time: {0}", DateTime.Now);
+                Console.WriteLine("Date & Time: {0}", DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt"));
                 Console.WriteLine("--------------------------------------------");
                 Console.WriteLine("Customer Name: {0}", customerName);
                 Console.WriteLine("Number Of Coffee Bags: {0}", numCoffeeBags);
@@ -84,7 +84,6 @@ namespace ConsoleApplication
                 Console.WriteLine("--------------------------------------------");
                 Console.WriteLine("Amount Payable: {0:C}", amountAfterDiscount + tax);
                 Console.WriteLine("--------------------------------------------");
-
 
                 // Input User Choice
                 Console.Write("Input Y/y To Continue Or Any Other Key To Exit: ");
